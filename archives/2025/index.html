@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1764404931968),
+    lastupdate: new Date(1765882594393),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2798,6 +2798,69 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="https://www.zuopanqiang.com/2025/12/04/vue/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="个人博客">
+    <meta itemprop="description" content="这是ZPQ的个人博客	">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/12/04/vue/"  itemprop="url">
+        vue学习笔记
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        1.compostition api(组合式api)a. vue2 的选项是api一个业务函数的实现设计到的数据太分散，一个业务函数需要到data,method,watch等配置项中去找。vue3呢类似java可以使用set up语法糖。当然也兼容vue2的写法b. vue3中可以混合写入vue2：即我写了setup也可以声明data（）{}和method，然后方法和变量的引用可以使用（th...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-12-04T00:00:00+08:00">2025-12-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/vue/">-vue</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/vue/" itemprop="url"><span itemprop="name">-vue</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/12/04/vue/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
   <link itemprop="mainEntityOfPage" href="https://www.zuopanqiang.com/2025/11/29/创建后台管理系统菜单/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="个人博客">
@@ -2825,6 +2888,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         配置菜单
+菜单使用element-plus（menu）因为在layout的index中定义了整体的菜单栏navbar和主内容的显示区域，这里在layout中的components下定义一个Sidebar&#x2F;index组件作为侧边栏
+新建Sidebar&#x2F;index组件，然后再style目录下的variable.module.scss文件中定义导航页面需要的颜色：
+
+12345...
       
     
   </div>
@@ -3434,78 +3501,6 @@ http...
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zuopanqiang.com/2025/06/06/CSS精灵/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="个人博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="个人博客">
-    <meta itemprop="description" content="这是ZPQ的个人博客	">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/06/CSS%E7%B2%BE%E7%81%B5/"  itemprop="url">
-        CSS精灵
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CSS精灵：将页面中要显示的小图放在一张大图里面利用定位显示想要的小图部分，用一张图显示多个小图，减轻服务器压力
-创建盒子，盒子尺寸与小图尺寸相同
-设置盒子背景图
-添加background-positon属性，改变背景图位置 3.1 可以使用PxCook 测量小图片左上角坐标 3.2 取负数左上移动（移到要显示的小图盒子位置）
-
-1234567891011121314&lt;style&gt...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-06T20:37:50+08:00">2025-06-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/CSS/">CSS</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/CSS/" itemprop="url"><span itemprop="name">CSS</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/06/06/CSS%E7%B2%BE%E7%81%B5/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3620,6 +3615,11 @@ http...
             title="/categories/cursor/" href="/categories/cursor/"
             active-action="action-categoriescursor"
             ><div class='name'>cursor</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/vue/" href="/categories/vue/"
+            active-action="action-categoriesvue"
+            ><div class='name'>-vue</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"

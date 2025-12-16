@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1764404931968),
+    lastupdate: new Date(1765882594393),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2809,6 +2809,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         配置菜单
+菜单使用element-plus（menu）因为在layout的index中定义了整体的菜单栏navbar和主内容的显示区域，这里在layout中的components下定义一个Sidebar&#x2F;index组件作为侧边栏
+新建Sidebar&#x2F;index组件，然后再style目录下的variable.module.scss文件中定义导航页面需要的颜色：
+
+12345...
       
     
   </div>
@@ -3010,6 +3014,11 @@ npx eslint –init
             title="/categories/cursor/" href="/categories/cursor/"
             active-action="action-categoriescursor"
             ><div class='name'>cursor</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/vue/" href="/categories/vue/"
+            active-action="action-categoriesvue"
+            ><div class='name'>-vue</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"

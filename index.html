@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1764404931968),
+    lastupdate: new Date(1765882594393),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2810,9 +2810,74 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="https://www.zuopanqiang.com/2025/12/04/vue/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="个人博客">
+    <meta itemprop="description" content="这是ZPQ的个人博客	">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/12/04/vue/"  itemprop="url">
+        vue学习笔记
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        1.compostition api(组合式api)a. vue2 的选项是api一个业务函数的实现设计到的数据太分散，一个业务函数需要到data,method,watch等配置项中去找。vue3呢类似java可以使用set up语法糖。当然也兼容vue2的写法b. vue3中可以混合写入vue2：即我写了setup也可以声明data（）{}和method，然后方法和变量的引用可以使用（th...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-12-04T00:00:00+08:00">2025-12-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/vue/">-vue</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/vue/" itemprop="url"><span itemprop="name">-vue</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/12/04/vue/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2844,6 +2909,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         配置菜单
+菜单使用element-plus（menu）因为在layout的index中定义了整体的菜单栏navbar和主内容的显示区域，这里在layout中的components下定义一个Sidebar&#x2F;index组件作为侧边栏
+新建Sidebar&#x2F;index组件，然后再style目录下的variable.module.scss文件中定义导航页面需要的颜色：
+
+12345...
       
     
   </div>
@@ -2946,83 +3015,6 @@ npx eslint –init
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zuopanqiang.com/2025/06/22/vscode创建uniapp项目/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="个人博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="个人博客">
-    <meta itemprop="description" content="这是ZPQ的个人博客	">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/22/vscode%E5%88%9B%E5%BB%BAuniapp%E9%A1%B9%E7%9B%AE/"  itemprop="url">
-        vscode创建uniapp项目
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        vscode创建uniapp项目
-在vscode终端cd到当前项目输入
-
-1npm install -g @vue/cli
-
-如果报错的话就win+r 然后ctrl+shift+enter 用管理者模式打开输入上面命令
-安装成功后输入
-
-1vue create -p dcloudio/uni-preset-vue .
-即在当前目录下安装uni-app模板的vue项目
-待补充。。。
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-22T19:51:51+08:00">2025-06-22</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/uniapp/">uniapp</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/uniapp/" itemprop="url"><span itemprop="name">uniapp</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/06/22/vscode%E5%88%9B%E5%BB%BAuniapp%E9%A1%B9%E7%9B%AE/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3031,7 +3023,7 @@ npx eslint –init
       <div class="prev-next">
         
         <p class="current">
-          1 / 5
+          1 / 6
         </p>
         
           <a class="next" rel="next" href="/page/2/">
@@ -3136,6 +3128,11 @@ npx eslint –init
             title="/categories/cursor/" href="/categories/cursor/"
             active-action="action-categoriescursor"
             ><div class='name'>cursor</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/vue/" href="/categories/vue/"
+            active-action="action-categoriesvue"
+            ><div class='name'>-vue</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
